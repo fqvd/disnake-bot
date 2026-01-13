@@ -15,7 +15,6 @@ class Banner(commands.Cog):
 
         
         if user.banner is None:
-            # Отправляем сообщение о отсутствии баннера
             await interaction.response.send_message("У цього юзера нема баннеру!", ephemeral=True)
         else:
             embed = disnake.Embed(color=0x2F3136)  
